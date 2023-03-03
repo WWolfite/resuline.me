@@ -2,45 +2,250 @@
 
 <html>
     <head>
-        <title>Resuline</title>
+        <title>Free Portfolios on Roblox - Resuline</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap" rel="stylesheet">
+        <!-- ICONS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <style>
         body {
             background-color: #000000;
-        }
-        h1 {
-            color: #FFFFFF;
-            font-family: 'Sofia Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);    
+        a {
+            text-decoration: none;
         }
 
-        .center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 48
+        }
+
+        .topbar {
+			background-color: #000000;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			height: 50px;
+			padding: 0 20px;
+		}
+		
+		.left-buttons {
+			display: flex;
+			align-items: center;
+			flex: 1;
+		}
+		
+		.button {
+			margin-right: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: all 0.3s ease;
+            color: #FFF;
+		}
+		
+		.button:hover {
+			color: #bebebe;
+		}
+		
+		.logo {
+			flex: 1;
+			text-align: right;
+		}
+		
+		.logo img {
+			height: 30px;
+		}
+
+        .hero {
+			background-image: url("https://images.unsplash.com/photo-1429041966141-44d228a42775");
+			background-size: cover;
+			background-position: center;
+			height: calc(100vh - 50px);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+            padding-right: 50px;
+            position: relative;
+            z-index: 1;
+		}
+		
+		.hero h1 {
+			font-size: 60px;
+			margin: 0;
+			line-height: 1.2;
+			text-align: right;
+			color: #fff;
+			/* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
+            z-index: 1;
+		}
+		
+		.hero p {
+			font-size: 24px;
+			margin: 20px 0 0;
+			text-align: right;
+			color: #c1c1c1;
+			/* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); */
+            z-index: 1;
+		}
+		
+		.hero-buttons {
+			margin-top: 50px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+            text-align: right;
+            padding-right: 50px;    
+            z-index: 1;
+		}
+		
+		.button-gold {
+			margin-right: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			border: 2px solid #917d2e;
+			border-radius: 5px;
+			padding: 10px 20px;
+			background-color: transparent;
+			color: #917d2e;
+			transition: all 0.3s ease;
+		}
+		
+		.button-gold:hover {
+			background-color: #917d2e;
+			color: #FFF;
+		}
+		
+		.button-white {
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			border: 2px solid #fff;
+			border-radius: 5px;
+			padding: 10px 20px;
+			background-color: #fff;
+			color: #333;
+			transition: all 0.3s ease;
+		}
+		
+		.button-white:hover {
+			background-color: #333;
+            border: 2px solid #333;
+			color: #fff;
+		}
+
+        .hero-gradient {
+			background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.8));
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 0;
+		}
+
+        .bottom-bar {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			background-color: #00000000;
+			padding: 0px;
+			position: fixed;
+			bottom: 10px;
+			left: 10px;
+			width: 100%;
+			z-index: 2;
+		}
+		.bottom-bar a {
+			color: white;
+			font-size: 16px;
+			margin-left: 4px;
+			text-decoration: none;
+		}
+		.bottom-bar span {
+			height: 20px;
+			width: 20px;
+			margin-right: 4px;
+            padding-bottom: 5px;
+		}
+
+        .hero a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 900px) {
+			.hero {
+				align-items: center;
+			}
+
+            .hero p {
+                text-align: center;
+            }
+			.hero-buttons {
+				justify-content: center;
+			}
+
+            .hero-gradient {
+                background: #00000093;
+            }
+
+            .bottom-bar {
+                justify-content: center;
+                left: 0px;
+            }
+
+            .bottom-bar a {
+                margin-right: 10px;
+            }
+		}
     </style>
     <body>
-        <div style="text-align: center;">
-            <div class="center">
-                <h1 style="font-size: large;">Resuline.me</h1>
+        <script>
+            // Get the URL of the current page
+            var url = window.location.href;
+      
+            // Check if the URL ends with #download
+            if (url.endsWith("#download")) {
+              // Redirect to https://roblox.com
+              window.location.replace("https://create.roblox.com/404");
+            } else if (url.endsWith("#download-gold")) {
+                window.location.replace("https://create.roblox.com/404");
+            }
+        </script>
+
+        <div class="topbar">
+            <div class="left-buttons">
+                <a class="button" href="/">Home</a>
+                <a class="button" href="//docs.resuline.me">Docs</a>
             </div>
+            <div class="logo">
+                <a href="/"><img src="logo.png" alt="Logo"></a>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="hero-gradient"></div>
+            <h1>ResuLine</h1>
+            <p>Create a simple Roblox portfolio in minutes.</p>
+            <div class="hero-buttons">
+                <button class="button-gold" onclick="javascript:window.location.href='/install.html'">Get Gold</button>
+                <button class="button-white" onclick="javascript:window.location.href='/install.html'">Get Lite</button>
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <span class="material-symbols-outlined" style="color: #FFF;"> photo_camera </span>
+            <a href="https://unsplash.com/photos/vj_9l20fzj0">Background // Unsplash</a>
         </div>
     </body>
 </html>
