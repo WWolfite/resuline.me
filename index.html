@@ -201,6 +201,16 @@
         color: #FFF;
       }
 
+	  ::-moz-selection { /* Code for Firefox */
+  		color: rgb(255, 255, 255);
+  		background: #00000093;
+	}
+
+	::selection {
+  		color: rgb(255, 255, 255);
+  		background: #00000093;
+	}
+
 	  html, body {margin: 0; height: 100%; overflow: hidden}
 
         @media screen and (max-width: 900px) {
@@ -247,7 +257,7 @@
             <div class="left-buttons">
                 <a class="button" href="/">Home</a>
                 <a class="button" href="//docs.resuline.me">Docs</a>
-                <a class="button" href="mailto:support@resuline.me">Support</a>
+                <a class="button" href="//support.resuline.me">Support</a>
                 <a class="button" href="//status.resuline.me">Status</a>
             </div>
 
