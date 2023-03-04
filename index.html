@@ -134,13 +134,13 @@
 			border-radius: 5px;
 			padding: 10px 20px;
 			background-color: #fff;
-			color: #333;
+			color: #000;
 			transition: all 0.3s ease;
 		}
 		
 		.button-white:hover {
-			background-color: #333;
-            border: 2px solid #333;
+			background-color: #000;
+            border: 2px solid #000;
 			color: #fff;
 		}
 
@@ -200,6 +200,24 @@
         background-color: #917d2e;
         color: #FFF;
       }
+
+      .button-hollow {
+			margin-right: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			cursor: pointer;
+			border: 2px solid #FFF;
+			border-radius: 5px;
+			padding: 10px 20px;
+			background-color: transparent;
+			color: #FFF;
+			transition: all 0.3s ease;
+		}
+		
+		.button-hollow:hover {
+			background-color: #FFF;
+			color: #000;
+		}
 
 	  ::-moz-selection { /* Code for Firefox */
   		color: rgb(255, 255, 255);
@@ -273,11 +291,11 @@
 
         <div class="hero">
             <div class="hero-gradient"></div>
-            <h1>ResuLine</h1>
-            <p>Create a simple Roblox portfolio in minutes.</p>
+            <h1>404 – ResuLine</h1>
+            <p>Page not found or does not exist.</p>
             <div class="hero-buttons">
-                <button class="button-gold" onclick="javascript:window.location.href='/install-gold.html'">Get Gold</button>
-                <button class="button-white" onclick="javascript:window.location.href='/install.html'">Get Lite</button>
+                <button class="button-hollow" onclick="javascript:window.location.href='/install-gold.html'">Support</button>
+                <button class="button-white" onclick="javascript:window.location.href='\/\/status.resuline.me'">Status</button>
             </div>
             
         </div>
